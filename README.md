@@ -1,7 +1,7 @@
 bulkexts
 ========
 
-create bulk extensions for testing FreePBX
+create bulk extensions for testing FreePBX or Switchvox
 
 Requirements
 ------------
@@ -21,7 +21,9 @@ Modify create_bulk.php if needed to set other values or adjust the
 number of records to create.
 
     # php create_bulk.php
+    -or-
+    # php create_swvx.php
 
-The bulkext.csv now contains a large number of records that are ready
-to be uploaded into FreePBX's bulk extension upload tool.
+The bulkext.csv or swvxext.csv now contains a large number of records that are ready
+to be uploaded into FreePBX's or Switchvox's bulk extension upload tool.
 
