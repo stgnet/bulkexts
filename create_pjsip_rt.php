@@ -30,8 +30,8 @@
 	$faker = Faker\Factory::create('en_US');
 
 
-	$count=500;
-	$extension = 200;
+	$count=2000;
+	$extension = 1000;
 
 	while ($count--)
 	{
@@ -40,6 +40,8 @@
 		$aor=array();
 		$aor['id'] = $extension;
 		$aor['mailboxes'] = $extension;
+		$aor['max_contacts'] = 1;
+		$aor['remove_existing'] = 1;
 
 		try {
 			$ps_aors->insert($aor);
@@ -54,6 +56,10 @@
 		$endpoint['force_rport'] = 'yes';
 		$endpoint['mailboxes'] = $extension;
 		$endpoint['callerid']=$faker->firstName.' '.$faker->lastName;
+		$endpoint['direct_media'] = 'no';
+		$endpoint['allow'] = 'ulaw';
+		$endpoint['rewrite_contact'] = 'yes';
+		$endpoint['rtp_symmetric'] = 'no';
 
 		try {
 			$ps_endpoints->insert($endpoint);
@@ -63,7 +69,7 @@
 
 		$auth = array();
 		$auth['id'] = $extension;
-		$auth['password'] = '12341234';
+		$auth['password'] = '123';
 		$auth['username'] = $extension;
 
 		try {
