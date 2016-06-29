@@ -1,2 +1,2 @@
 extension,name,description,tech,dial,secret,callwaiting_enable,findmefollow_enabled,findmefollow_grplist,languages_language,voicemail_enable,voicemail_vmpwd,voicemail_email,voicemail_options
-200,Scott Griepentrog,Sample,pjsip,PJSIP/200,12341234,ENABLED,,,,,,,
+200,Scott Griepentrog,Scott Griepentrog,pjsip,PJSIP/200,12341234,ENABLED,,,,,,,

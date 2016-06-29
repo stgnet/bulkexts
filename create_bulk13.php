@@ -27,7 +27,7 @@
 		$entry=$default;
 		$entry['extension']=++$extension;
 		$entry['name']=$faker->firstName.' '.$faker->lastName;
-		$entry['description']='Sample Extension '.$extension;
+		$entry['description']=$entry['name'];
 		$entry['tech'] = 'pjsip';
 		$entry['dial'] = 'PJSIP/'.$extension;
 		$entry['secret']=md5($entry['name']);
