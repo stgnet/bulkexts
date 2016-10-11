@@ -1,2 +1,2 @@
-ext,fname,lname,email,title,location,password,phone_password,mac_address
-200,Scott,Griepentrog,scott.griepentrog@example.com,,,5551212,notasecret,
+ext,fname,lname,email,title,location,password,phone_password,voicemail_password,mac_address
+200,Scott,Griepentrog,scott.griepentrog@example.com,,,5551212,notasecret,12341234,
