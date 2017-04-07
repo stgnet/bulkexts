@@ -29,8 +29,8 @@
 		$entry['fname']=$faker->firstName;
 		$entry['lname']=$faker->lastName;
 		$entry['email']=str_replace($bademail,"",strtolower($entry['fname'].'.'.$entry['lname'].'@example.org'));
-		$entry['password']=$faker->numerify('########');
-		$entry['phone_password']=substr(md5($entry['fname'].$entry['lname']),0,16);
+		$entry['password']=$faker->numerify('Ul.#####');
+		$entry['phone_password']=$entry['password'];
 		$entry['voicemail_password']=$faker->numerify('########');
 
 		echo $extension.': '.$entry['email']."\n";
